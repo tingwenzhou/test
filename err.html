@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <title>Service Unavailable | Comiru </title>
+  <style>
+    html,
+    body {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      background-color: #F7F8FB;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .out-box {
+      opacity: 0.03;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      background-image: url(https://comiru-staging.herokuapp.com/img/firstview01_pc_02.png?20171020);
+      left: 0;
+      margin: 0;
+      display: block;
+      position: fixed;
+      top: 0;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+
+
+    .message {
+      text-align: center;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px 20px;
+      max-width: 450px;
+    }
+
+    .message__title {
+      font-size: 22px;
+      font-weight: 100;
+      color: #47494E;
+    }
+
+    p {
+      -webkit-margin-after: 0px;
+      -webkit-margin-before: 0px;
+      font-size: 15px;
+      color: #7F828B;
+      line-height: 21px;
+      margin-bottom: 4px;
+    }
+
+    .alert-box {
+      z-index: 2;
+      padding: 25px;
+      background-color: white;
+      margin-top: 20px;
+      border-style: solid;
+      border-color: #e8e8e8;
+      border-width: 5px;
+      padding-top: 15px;
+    }
+
+    .totalSecond {
+      color: blue;
+      font-size: 29px;
+      margin-top: 15px;
+      display: block;
+    }
+
+    .link {
+      border-style: solid;
+      padding: 5px;
+      margin: 18px;
+      display: inline-block;
+      font-size: 20px;
+      border-color: yellowgreen;
+      color: rebeccapurple;
+      cursor: pointer;
+
+    }
+
+    .link:hover {
+      background-color: #1f7b23;
+      color: #fff;
+      border-color: #e6e6e6;
+
+    }
+
+    .feedback {
+      margin: 10px;
+      text-align: left;
+      z-index: 2;
+    }
+  </style>
+  <!-- <base target="_parent" /> -->
+</head>
+
+<body>
+  <div class="out-box"></div>
+  <div class="message">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="137px" height="32px" viewbox="0 0 137 32" enable-background="new 0 0 137 32" xml:space="preserve">
+      <image id="image0" width="137" height="32" x="0" y="0" xlink:href="data:image/png;base64,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
+AAAASUVORK5CYII=" />
+    </svg>
+    <div class="alert-box">
+      <h2 class="message__title"> - 大変混み合っております - </h2>
+      <p>
+        只今アクセスが集中しており、接続しづらい状態となっております。ご迷惑をおかけし、申し訳ございません。
+        <br>
+        <span id="totalSecond" class="totalSecond">2</span>
+        <span id="go" class="totalSecond" style="display:none;">
+          <span class="link" onclick="jump();">リロード</span>
+        </span>
+        <br> そのままお待ちいただくか、お手数ですが、お時間をおいて再度接続をお願い致します。
+      </p>
+    </div>
+
+    <p class="feedback">
+      もし、お時間をおいても、本画面が継続して表示される場合は、
+      <a href="https://comiru.jp/feedback" target="_blank">サーポートに問い合わせ</a>ください。
+    </p>
+  </div>
+
+  <script type="text/javascript">
+    var second = document.getElementById('totalSecond').textContent;
+    var client = navigator.appName.indexOf("Explorer");
+    if (client > -1) {
+      second = document.getElementById('totalSecond').innerText;
+    } else {
+      second = document.getElementById('totalSecond').textContent;
+    }
+    setInterval("redirect()", 1000);
+
+    function redirect() {
+      if (second < 0) {
+        if (self != top) {
+          done();
+        } else {
+          done();
+        }
+      } else {
+        if (client > -1) {
+          document.getElementById('totalSecond').innerText = second--;
+        } else {
+          document.getElementById('totalSecond').textContent = second--;
+        }
+      }
+    }
+
+    function done() {
+      document.getElementById('totalSecond').style.display = "none";
+      document.getElementById('go').style.display = "block";
+    }
+
+    function jump() {
+      if (self != top) {
+        top.location.reload();
+      } else {
+        location.reload();;
+      }
+    }
+  </script>
+</body>
+
+</html>
